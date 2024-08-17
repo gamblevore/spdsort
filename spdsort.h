@@ -11,8 +11,7 @@
 	// 6) It doesn't use a garbage design for the return value. It uses an int, which can store equal, less or more. C++'s sort uses a BOOL. Which... its just not right. If you are depth-sorting some objects, it can lead to flicker as equally distant objects will flicker onscreen.
 	// 7) Actually you are free to return a bool or int! My sorter checks if your return value is <= 0. This is true for 0, but not for 1.
 
-// you'll have to modify this yourself to be useful, of course.
-// How to test this on suffix arrays... not sure how?
+// You'll have to modify this yourself to be useful, of course.
 
 
 #ifndef __spdsort_type__
