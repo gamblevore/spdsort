@@ -1,21 +1,4 @@
 // spdsort.cpp  http://gamblevore.org, by theodore h. smith
-// basically... just testing some sorting algorithms...
-
-// my spdsort is like a normal quicksort, but it has better characteristics:
-	// 1) handles invalid sort functions. You need this if you are making a programming language, cos you don't want some kid making his first game to crash his computer just cos the sort function is a little bit off. Garbage in = garbage out... thats all we want. C++ sorts will actually crash your app with invalid sort functions.
-	// 2) Seems a lil faster?
-	// 3) Handles sorted and reverse sorted arrays very fast
-	// 4) Code is available and not too big. (unlike C++ sort)
-	// 5) Only calls the compare function once... this is important for very slow compare functions. C++ sort calls it twice per-pair of items.
-	// 6) It doesn't use a garbage design for the return value. It uses an int, which can store equal, less or more. C++'s sort uses a BOOL. Which... its just not right. If you are depth-sorting some objects, it can lead to flicker as equally distant objects will flicker onscreen.
-	// 7) Actually its done so you can return a bool or an int... up to you. We just compare if the result is <= 0.
-	// this is true for 0 and -1.
-
-// you'll have to modify this yourself to be useful, of course.
-// How to test this on suffix arrays... not sure how?
-
-
-
 
 #include "spdsort.h"
 #include <stdio.h>
